@@ -2,75 +2,74 @@ package animals;
 
 public class Pet {
 
-	private static String name;
-	private static int age;
-	private static String location;
-	private static String type;
+	private String name;
+	private int age;
+	private String location;
+	private String type;
 
 	public Pet(String name, int age, String location, String type) {
-		Pet.name = name;
-		Pet.age = age;
-		Pet.location = location;
-		Pet.type = type;
+		this.name = name;
+		this.age = age;
+		this.location = location;
+		this.type = type;
 	}
 
 	public Pet() {
 
 	}
 
-	public static String getName() {
+	public String getName() {
 		return name;
 	}
 
-	public static void setName(String name) {
-		Pet.name = name;
+	public void setName(String name) {
+		this.name = name;
 	}
 
-	public static int getAge() {
+	public int getAge() {
 		return age;
 	}
 
-	public static void setAge(int age) {
-		Pet.age = age;
+	public void setAge(int age) {
+		this.age = age;
 	}
 
-	public static String getLocation() {
+	public String getLocation() {
 		return location;
 	}
 
-	public static void setLocation(String location) {
-		Pet.location = location;
+	public void setLocation(String location) {
+		this.location = location;
 	}
 
-	public static String getType() {
+	public String getType() {
 		return type;
 	}
 
-	public static void setType(String type) {
-		Pet.type = type;
+	public void setType(String type) {
+		this.type = type;
 	}
 
-	public static void main(String[] args) {
+	public void main(String[] args) {
 
-		Pet.getName();
-		Pet.getAge();
-		Pet.getType();
+		this.getName();
+		this.getAge();
+		this.getType();
 
-		System.out.printf(Pet.name + "\n");
-		System.out.print(Pet.age + "\n");
-		System.out.printf(Pet.location + "\n");
-		System.out.printf(Pet.type + "\n");
+		System.out.printf(this.name + "\n");
+		System.out.print(this.age + "\n");
+		System.out.printf(this.location + "\n");
+		System.out.printf(this.type + "\n");
 
-		Pet.setName("Gus");
-		Pet.setAge(4);
-		Pet.setLocation("Inside");
-		Pet.setType("cat");
+		this.setName("Gus");
+		this.setAge(4);
+		this.setLocation("Inside");
+		this.setType("cat");
 
-		System.out.printf(Pet.name + "\n");
-		System.out.print(Pet.age + "\n");
-		System.out.printf(Pet.location + "\n");
-		System.out.printf(Pet.type + "\n");
+		System.out.printf(this.name + "\n");
+		System.out.print(this.age + "\n");
+		System.out.printf(this.location + "\n");
+		System.out.printf(this.type + "\n");
 
 	}
-
 }
