@@ -2,9 +2,9 @@ package animals;
 
 public class Hamburgers {
 
-	private static String name;
-	private static String meat;
-	private static String cheese;
+	private  String name;
+	private  String meat;
+	private  String cheese;
 
 	public Hamburgers() {
 		super();
@@ -12,56 +12,56 @@ public class Hamburgers {
 
 	public Hamburgers(String name, String meat) {
 		super();
-		Hamburgers.name = name;
-		Hamburgers.meat = meat;
+		this.name = name;
+		this.meat = meat;
 	}
 
 	public Hamburgers(String name, String meat, String cheese) {
 		super();
-		Hamburgers.name = name;
-		Hamburgers.meat = meat;
-		Hamburgers.cheese = cheese;
+		this.name = name;
+		this.meat = meat;
+		this.cheese = cheese;
 	}
 
-	public static String getName() {
+	public  String getName() {
 		return name;
 	}
 
-	public static void setName(String name) {
-		Hamburgers.name = name;
+	public  void setName(String name) {
+		this.name = name;
 	}
 
-	public static String getMeat() {
+	public  String getMeat() {
 		return meat;
 	}
 
-	public static void setMeat(String meat) {
-		Hamburgers.meat = meat;
+	public  void setMeat(String meat) {
+		this.meat = meat;
 	}
 
-	public static String getCheese() {
+	public  String getCheese() {
 		return cheese;
 	}
 
-	public static void setCheese(String cheese) {
-		Hamburgers.cheese = cheese;
+	public  void setCheese(String cheese) {
+		this.cheese = cheese;
 	}
 
-	public static boolean hasCheese(boolean cheese) {
+	public  boolean hasCheese(boolean cheese) {
 		return hasCheese(true);
 	}
 
-	public static String yourOrder = name + meat + cheese;
+	public  String yourOrder = name + meat + cheese;
 
-	public static void main(String[] args) {
+	public  void main(String[] args) {
 
-		Hamburgers.getName();
-		Hamburgers.getMeat();
-		Hamburgers.getCheese();
+		this.getName();
+		this.getMeat();
+		this.getCheese();
 
-		Hamburgers.setName("Meatzilla \n");
-		Hamburgers.setMeat("five beef patties \n");
-		Hamburgers.setCheese("one pound of cheddar cheese \n");
+		this.setName("Meatzilla \n");
+		this.setMeat("five beef patties \n");
+		this.setCheese("one pound of cheddar cheese \n");
 
 		System.out.print(name + meat + cheese);
 	}
